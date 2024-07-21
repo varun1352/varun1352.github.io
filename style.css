@@ -133,14 +133,11 @@ footer {
 }
 
 .night-mode .social-links a:hover {
-    color: #e67e22;
+    color: #4c99cb;
 }
-
-.night-mode .h1 
-{
-
+.night-mode a {
+    color: #4c99cb; /* Change to desired color */
 }
-
 .night-mode footer {
     background-color: #333;
 }
