@@ -82,12 +82,17 @@
         </div>
     </footer>
     <div class="night-mode-toggle">
-        <button id="toggleNightMode">Night Mode</button>
+        <span id="toggleNightMode">🌙 Night Mode</span>
     </div>
     <script>
         const toggleButton = document.getElementById('toggleNightMode');
         toggleButton.addEventListener('click', () => {
             document.body.classList.toggle('night-mode');
+            if (document.body.classList.contains('night-mode')) {
+                toggleButton.textContent = '☀️ Light Mode';
+            } else {
+                toggleButton.textContent = '🌙 Night Mode';
+            }
         });
     </script>
 </body>

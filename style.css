@@ -18,7 +18,7 @@ body {
     flex-wrap: wrap;
     align-items: center;
     text-align: left;
-    background-color: #fff;
+    background-color: #f5f5f5;
     padding: 40px 0;
 }
 
@@ -64,7 +64,7 @@ body {
 }
 
 main {
-    padding: 40px 0;
+    padding: 20px 0;
     text-align: center;
 }
 
@@ -92,19 +92,17 @@ footer {
     position: fixed;
     bottom: 20px;
     right: 20px;
+    cursor: pointer;
 }
 
 #toggleNightMode {
-    background-color: #3498db;
-    color: white;
+    background-color: transparent;
+    color: #3498db;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
     font-size: 16px;
-}
-
-#toggleNightMode:hover {
-    background-color: #2980b9;
+    text-decoration: underline;
 }
 
 .night-mode {
@@ -116,8 +114,12 @@ footer {
     background-color: #444;
 }
 
-.night-mode .profile h1, .night-mode .social-links a, .night-mode #toggleNightMode {
-    color: #f39c12;
+.night-mode .profile h1 {
+    color: #f5f5f5;
+}
+
+.night-mode .social-links a, .night-mode #toggleNightMode {
+    color: #f5f5f5;
 }
 
 .night-mode .social-links a:hover {
