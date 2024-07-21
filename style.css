@@ -1,5 +1,5 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'JetBrains Mono', monospace;
     margin: 0;
     padding: 0;
     color: #333;
@@ -41,7 +41,7 @@ body {
 
 .profile h1 {
     margin: 10px 0 5px;
-    color: #000;
+    color: #3498db;
 }
 
 .profile p {
@@ -53,14 +53,14 @@ body {
 }
 
 .social-links a {
-    color: #333;
+    color: #3498db;
     margin-right: 10px;
     text-decoration: none;
     font-size: 24px;
 }
 
 .social-links a:hover {
-    color: #333;
+    color: #2980b9;
 }
 
 main {
@@ -86,6 +86,46 @@ footer {
     color: #fff;
     padding: 20px 0;
     text-align: center;
+}
+
+.night-mode-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+#toggleNightMode {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#toggleNightMode:hover {
+    background-color: #2980b9;
+}
+
+.night-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+.night-mode .header-container {
+    background-color: #444;
+}
+
+.night-mode .profile h1, .night-mode .social-links a, .night-mode #toggleNightMode {
+    color: #f39c12;
+}
+
+.night-mode .social-links a:hover {
+    color: #e67e22;
+}
+
+.night-mode footer {
+    background-color: #222;
 }
 
 @media (max-width: 768px) {

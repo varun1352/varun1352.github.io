@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Varun Deliwala's Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -81,5 +81,14 @@
             <p>&copy; 2024 Varun Deliwala</p>
         </div>
     </footer>
+    <div class="night-mode-toggle">
+        <button id="toggleNightMode">Night Mode</button>
+    </div>
+    <script>
+        const toggleButton = document.getElementById('toggleNightMode');
+        toggleButton.addEventListener('click', () => {
+            document.body.classList.toggle('night-mode');
+        });
+    </script>
 </body>
 </html>
