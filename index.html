@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Varun Deliwala's Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,15 +15,15 @@
                 <h1>Varun Deliwala</h1>
                 <p>Grad Student, Computer Science, NYU</p>
                 <div class="social-links">
-                    <a href="mailto:vd2298@nyu.edu"><i class="fas fa-envelope"></i></a>
-                    <a href="https://github.com/varun1352"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/varun-deliwala-628771192"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:vd2298@nyu.edu"><img src="email-icon.png" alt="Email"></a>
+                    <a href="https://github.com/varun1352"><img src="github-icon.png" alt="GitHub"></a>
+                    <a href="https://www.linkedin.com/in/varun-deliwala-628771192"><img src="linkedin-icon.png" alt="LinkedIn"></a>
                 </div>
             </div>
             <div class="about-me">
                 <h2>Hello there!</h2>
                 <p>I am currently a grad student at NYU Courant in the second year of my Master's in Computer Science. I have a keen interest in Machine Learning and Computer Vision. I am currently working in the lab of Prof. David Fouhey at NYU CDS. I did my undergrad at Ahmedabad University where I received a B.Tech Degree in CSE. While I wait for my model to converge, I also delve into anime, football (the European kind) and continue my search for the best coffee shop in NYC.</p>
-                <p>Check out my video <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">here</a>.</p>
+                <p>Check out my video <a href="your-video-link">here</a>.</p>
             </div>
         </div>
     </header>
@@ -78,16 +77,16 @@
     <footer>
         <div class="container">
             <p>&copy; 2024 Varun Deliwala</p>
+            <button id="toggleNightMode" class="night-mode-toggle">🌙 Night Mode</button>
         </div>
     </footer>
-    <div class="night-mode-toggle">
-        <span id="toggleNightMode">🌙 Night Mode</span>
-    </div>
     <script>
         const toggleButton = document.getElementById('toggleNightMode');
+        const body = document.body;
+
         toggleButton.addEventListener('click', () => {
-            document.body.classList.toggle('night-mode');
-            if (document.body.classList.contains('night-mode')) {
+            body.classList.toggle('night-mode');
+            if (body.classList.contains('night-mode')) {
                 toggleButton.textContent = '☀️ Light Mode';
             } else {
                 toggleButton.textContent = '🌙 Night Mode';
