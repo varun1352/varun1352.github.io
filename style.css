@@ -38,11 +38,12 @@ body {
     width: 150px;
     height: 150px;
     margin-bottom: 10px;
+    transition: width 0.2s ease, height 0.2s ease;
 }
 
 .profile h1 {
     margin: 10px 0 5px;
-    color: #3498db;
+    color: #333;
     font-size: 24px;
 }
 
@@ -140,7 +141,7 @@ footer {
 }
 
 .night-mode a {
-    color: #4c99cb;
+    color: #4c99cb; /* Change to desired color */
 }
 
 .night-mode footer {
@@ -164,11 +165,28 @@ footer {
         justify-content: center;
     }
 
-    .container {
-        padding: 0 10px;
+    .profile img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .profile h1 {
+        font-size: 20px;
+    }
+
+    .profile p {
+        font-size: 14px;
+    }
+
+    .social-links a {
+        font-size: 18px;
+    }
+
+    main {
+        padding: 10px;
     }
 
     .experience-item, .project-item {
-        margin-bottom: 15px;
+        text-align: justify;
     }
 }
