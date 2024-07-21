@@ -8,7 +8,7 @@ body {
 
 .container {
     width: 100%;
-    max-width: 1200px;
+    max-width: 900px; /* Reduced the width to center align better */
     padding: 0 20px;
     margin: 0 auto;
 }
@@ -23,32 +23,32 @@ body {
 }
 
 .header-container .profile {
-    flex: 1 1 300px;
-    max-width: 300px;
+    flex: 1 1 200px;
+    max-width: 200px; /* Reduced the width */
     text-align: center;
 }
 
 .header-container .about-me {
     flex: 2 1 600px;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .profile img {
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    width: 120px; /* Reduced the image size */
+    height: 120px; /* Reduced the image size */
     margin-bottom: 10px;
 }
 
 .profile h1 {
     margin: 10px 0 5px;
     color: #3498db;
-    font-size: 24px;
+    font-size: 20px; /* Reduced the font size */
 }
 
 .profile p {
     margin: 5px 0;
-    font-size: 16px;
+    font-size: 14px; /* Reduced the font size */
 }
 
 .social-links {
@@ -59,7 +59,7 @@ body {
     color: #3498db;
     margin-right: 10px;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 18px; /* Reduced the font size */
 }
 
 .social-links a:hover {
@@ -68,7 +68,7 @@ body {
 
 main {
     padding: 10px 0;
-    text-align: center;
+    text-align: left; /* Changed text alignment */
 }
 
 section {
@@ -162,5 +162,9 @@ footer {
 
     .social-links {
         justify-content: center;
+    }
+
+    .about-me {
+        margin-top: 20px; /* Add some space on mobile view */
     }
 }
