@@ -54,7 +54,7 @@ header {
     font-weight: 700;
 }
 
-social-links a:hover {
+.social-links a:hover {
     text-decoration: underline;
 }
 
