@@ -37,6 +37,7 @@ header {
 
 .profile h1 {
     margin: 10px 0 5px;
+    color: #3498db; /* Change this to a color that contrasts well with the background */
 }
 
 .profile p {
@@ -54,7 +55,7 @@ header {
     font-weight: 700;
 }
 
-.social-links a:hover {
+social-links a:hover {
     text-decoration: underline;
 }
 
