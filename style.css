@@ -18,13 +18,14 @@ body {
     flex-wrap: wrap;
     align-items: center;
     text-align: left;
-    background-color: #f5f5f5;
+    background-color: #fff;
     padding: 40px 0;
 }
 
 .header-container .profile {
     flex: 1 1 300px;
     max-width: 300px;
+    text-align: center;
 }
 
 .header-container .about-me {
@@ -40,7 +41,7 @@ body {
 
 .profile h1 {
     margin: 10px 0 5px;
-    color: #3498db;
+    color: #000;
 }
 
 .profile p {
@@ -52,18 +53,19 @@ body {
 }
 
 .social-links a {
-    color: #3498db;
+    color: #333;
     margin-right: 10px;
     text-decoration: none;
-    font-weight: 700;
+    font-size: 24px;
 }
 
 .social-links a:hover {
-    text-decoration: underline;
+    color: #333;
 }
 
 main {
     padding: 40px 0;
+    text-align: center;
 }
 
 section {
@@ -76,6 +78,7 @@ h1, h2 {
 
 .experience-item, .project-item {
     margin-bottom: 20px;
+    text-align: justify;
 }
 
 footer {
