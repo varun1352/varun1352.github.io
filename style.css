@@ -3,12 +3,12 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
-    background-color: #fff;
+    background-color: #f5f5f5;
 }
 
 .container {
     width: 100%;
-    max-width: 800px; /* Adjusted max-width to better center content */
+    max-width: 1200px;
     padding: 0 20px;
     margin: 0 auto;
 }
@@ -18,8 +18,8 @@ body {
     flex-wrap: wrap;
     align-items: center;
     text-align: left;
-    background-color: #fff;
-    padding: 40px 0;
+    background-color: #f5f5f5;
+    padding: 20px 0;
 }
 
 .header-container .profile {
@@ -30,23 +30,25 @@ body {
 
 .header-container .about-me {
     flex: 2 1 600px;
-    text-align: justify;
+    margin-top: 10px;
 }
 
 .profile img {
     border-radius: 50%;
     width: 150px;
     height: 150px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .profile h1 {
     margin: 10px 0 5px;
     color: #3498db;
+    font-size: 24px;
 }
 
 .profile p {
     margin: 5px 0;
+    font-size: 16px;
 }
 
 .social-links {
@@ -57,7 +59,7 @@ body {
     color: #3498db;
     margin-right: 10px;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .social-links a:hover {
@@ -65,13 +67,12 @@ body {
 }
 
 main {
-    padding: 20px 0;
+    padding: 10px 0;
     text-align: center;
 }
 
 section {
-    margin-bottom: 40px;
-    text-align: justify; /* Ensure all sections are justified */
+    margin-bottom: 20px;
 }
 
 h1, h2 {
@@ -79,19 +80,21 @@ h1, h2 {
 }
 
 .experience-item, .project-item {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    text-align: justify;
 }
 
 footer {
     background-color: #f5f5f5;
-    color: #fff;
+    color: #333;
+    padding: 10px 0;
     text-align: center;
 }
 
 .night-mode-toggle {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 10px;
+    right: 10px;
     cursor: pointer;
 }
 
@@ -99,9 +102,9 @@ footer {
     background-color: transparent;
     color: #3498db;
     border: none;
-    padding: 10px 20px;
+    padding: 5px 10px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 14px;
     text-decoration: underline;
 }
 
@@ -135,11 +138,14 @@ footer {
 .night-mode .social-links a:hover {
     color: #4c99cb;
 }
+
 .night-mode a {
     color: #4c99cb; /* Change to desired color */
 }
+
 .night-mode footer {
     background-color: #333;
+    color: #f5f5f5;
 }
 
 @media (max-width: 768px) {
@@ -156,9 +162,5 @@ footer {
 
     .social-links {
         justify-content: center;
-    }
-
-    main, section {
-        text-align: justify;
     }
 }
