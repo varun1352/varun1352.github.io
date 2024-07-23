@@ -1,9 +1,15 @@
+/* Ensures padding and borders are included in the width */
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'JetBrains Mono', monospace;
     margin: 0;
     padding: 0;
     color: #333;
     background-color: #f5f5f5;
+    overflow-x: hidden; /* Prevent horizontal scrollbar */
 }
 
 .container {
@@ -15,43 +21,46 @@ body {
 
 .header-container {
     display: flex;
-    flex-wrap: nowrap; /* Keep the profile and about-me side by side */
+    flex-wrap: wrap;
     align-items: center;
-    text-align: left; /* Changed from justify to left */
+    text-align: justify;
     background-color: #f5f5f5;
     padding: 20px 0;
 }
 
 .header-container .profile {
-    flex: 1 1 250px; /* Adjusted for smaller size */
-    max-width: 250px; /* Adjusted for smaller size */
+    flex: 0 1 150px;
+    max-width: 150px;
     text-align: center;
 }
 
 .header-container .about-me {
-    flex: 2 1 600px;
-    margin-top: 0; /* Removed top margin */
-    padding-left: 20px; /* Added padding for spacing */
-    text-align: justify;
+    flex: 2 1 500px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .profile img {
     border-radius: 50%;
-    width: 120px; /* Adjusted for smaller size */
-    height: 120px; /* Adjusted for smaller size */
-    margin-bottom: 10px;
-    transition: width 0.2s ease, height 0.2s ease;
+    width: 100%;
+    height: auto;
+    margin-bottom: 0;
+}
+
+.profile {
+    margin-left: 20px;
 }
 
 .profile h1 {
     margin: 10px 0 5px;
     color: #3498db;
-    font-size: 22px; /* Adjusted for smaller size */
+    font-size: 24px;
+    font-weight: bold;
 }
 
 .profile p {
-    margin: 5px 0;
-    font-size: 14px; /* Adjusted for smaller size */
+    margin: 2px 0;
+    font-size: 16px;
 }
 
 .social-links {
@@ -62,7 +71,7 @@ body {
     color: #3498db;
     margin-right: 10px;
     text-decoration: none;
-    font-size: 18px; /* Adjusted for smaller size */
+    font-size: 20px;
 }
 
 .social-links a:hover {
@@ -70,12 +79,13 @@ body {
 }
 
 main {
-    padding: 10px 0;
+    padding: 0 20px;
     text-align: center;
 }
 
 section {
     margin-bottom: 20px;
+    padding: 0 20px; /* Ensuring same padding as the container */
 }
 
 h1, h2 {
@@ -151,23 +161,61 @@ footer {
     color: #f5f5f5;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
     .container {
         padding: 0 15px;
     }
 
     .header-container {
-        flex-direction: row; /* Keep side-by-side on larger mobile screens */
         padding: 15px 0;
     }
 
-    .profile img {
-        width: 100px;
-        height: 100px;
+    .profile {
+        max-width: 120px;
+    }
+
+    .about-me {
+        flex: 2 1 400px;
+        margin-right: 20px;
     }
 
     .profile h1 {
+        font-size: 24px;
+    }
+
+    .profile p {
+        font-size: 15px;
+    }
+
+    .social-links a {
         font-size: 20px;
+    }
+    .experience-item, .project-item {
+        margin-bottom: 10px;
+        text-align: justify;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    .header-container {
+        padding: 10px 0;
+    }
+
+    .profile {
+        max-width: 100px;
+    }
+
+    .about-me {
+        flex: 2 1 350px;
+        margin-right: 20px;
+    }
+
+    .profile h1 {
+        font-size: 24px;
     }
 
     .profile p {
@@ -175,38 +223,41 @@ footer {
     }
 
     .social-links a {
-        font-size: 16px;
+        font-size: 20px;
+    }
+    .experience-item, .project-item {
+        margin-bottom: 10px;
+        text-align: justify;
     }
 }
 
 @media (max-width: 768px) {
     .header-container {
         flex-direction: column;
-        align-items: center;
-        padding: 10px 0;
-    }
-
-    .header-container .profile,
-    .header-container .about-me {
-        flex: 1 1 100%;
         text-align: center;
     }
 
-    .about-me {
-        padding-left: 0; /* Remove padding on mobile */
+    .header-container .profile {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+    .header-container .about-me {
+        flex: 1 1 100%;
+        text-align: justify;
+        margin-top: 10px; /* Adjusted to give some space on smaller screens */
+        margin-right: 20px;
     }
 
     .social-links {
         justify-content: center;
     }
 
-    .profile img {
-        width: 80px;
-        height: 80px;
+    .profile {
+        max-width: 80px;
     }
 
     .profile h1 {
-        font-size: 18px;
+        font-size: 24px;
     }
 
     .profile p {
@@ -214,18 +265,20 @@ footer {
     }
 
     .social-links a {
-        font-size: 14px;
+        font-size: 20px;
     }
 
     main {
         padding: 5px;
     }
 
-    .experience-item, .project-item {
-        text-align: justify;
-    }
-
     section {
         margin-bottom: 10px;
+        padding: 0 10px; /* Ensure consistent padding with the container */
+    }
+
+    .experience-item, .project-item {
+        margin-bottom: 10px;
+        text-align: justify;
     }
 }
