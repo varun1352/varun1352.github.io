@@ -31,7 +31,7 @@ body {
 .header-container .profile {
     flex: 0 1 150px;
     max-width: 150px;
-    text-align: center;
+    text-align: justify;
 }
 
 .header-container .about-me {
@@ -239,7 +239,59 @@ footer {
 
     .header-container .profile {
         flex: 1 1 100%;
+        text-align: center;
+    }
+    .header-container .about-me {
+        flex: 1 1 100%;
         text-align: justify;
+        margin-top: 10px; /* Adjusted to give some space on smaller screens */
+        margin-right: 20px;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+    .profile {
+        max-width: 80px;
+    }
+
+    .profile h1 {
+        font-size: 24px;
+    }
+
+    .profile p {
+        font-size: 13px;
+    }
+
+    .social-links a {
+        font-size: 20px;
+    }
+
+    main {
+        padding: 5px;
+    }
+
+    section {
+        margin-bottom: 10px;
+        padding: 0 10px; /* Ensure consistent padding with the container */
+    }
+
+    .experience-item, .project-item {
+        margin-bottom: 10px;
+        text-align: justify;
+    }
+}
+
+@media (max-width: 400px) {
+    .header-container {
+        flex-direction: column;
+        text-align: justify;
+    }
+
+    .header-container .profile {
+        flex: 1 1 100%;
+        text-align: center;
     }
     .header-container .about-me {
         flex: 1 1 100%;
