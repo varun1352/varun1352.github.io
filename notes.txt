@@ -1,0 +1,5 @@
+Hello there<insert the General Kenobi link> I am currently a grad student at NYU Courant pursuing my Master's in Computer Science with a concentration in Artifical Intelligence and Data Science.
+I am interested in detection, tracking and forecasting in the field of Computer Vision with researching with prof. David Fouhey and Richard Higgins in the field of Computer vision. W
+
+Hello there!
+I am currently a grad student at NYU Courant in the second year of my Master's in Computer Science. I have a keen interest in Machine Learning and Computer Vision. I am curently working in the lab of Prod. David Fouhey at NYU CDS. I did my undergrad at Ahmedabad University where I recieved a B.Tech Degree in CSE. While I wait for my model to converge, I also delve into anime, football(the european kind emoji) and continue my search for the best coffee shop in NYC. 
