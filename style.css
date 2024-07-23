@@ -23,7 +23,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    text-align: justify;
+    text-align: left;
     background-color: #f5f5f5;
     padding: 20px 0;
 }
@@ -31,7 +31,7 @@ body {
 .header-container .profile {
     flex: 0 1 150px;
     max-width: 150px;
-    text-align: justify;
+    text-align: left;
 }
 
 .header-container .about-me {
@@ -94,7 +94,7 @@ h1, h2 {
 
 .experience-item, .project-item {
     margin-bottom: 10px;
-    text-align: justify;
+    text-align: left;
 }
 
 footer {
@@ -192,7 +192,7 @@ footer {
     }
     .experience-item, .project-item {
         margin-bottom: 10px;
-        text-align: justify;
+        text-align: left;
     }
 }
 
@@ -227,14 +227,14 @@ footer {
     }
     .experience-item, .project-item {
         margin-bottom: 10px;
-        text-align: justify;
+        text-align: left;
     }
 }
 
 @media (max-width: 768px) {
     .header-container {
         flex-direction: column;
-        text-align: justify;
+        text-align: left;
     }
 
     .header-container .profile {
@@ -243,9 +243,10 @@ footer {
     }
     .header-container .about-me {
         flex: 1 1 100%;
-        text-align: justify;
+        text-align: left;
         margin-top: 10px; /* Adjusted to give some space on smaller screens */
         margin-right: 20px;
+        margin-left: 25px;
     }
 
     .social-links {
@@ -279,14 +280,14 @@ footer {
 
     .experience-item, .project-item {
         margin-bottom: 10px;
-        text-align: justify;
+        text-align: left;
     }
 }
 
 @media (max-width: 400px) {
     .header-container {
         flex-direction: column;
-        text-align: justify;
+        text-align: left;
     }
 
     .header-container .profile {
@@ -295,7 +296,7 @@ footer {
     }
     .header-container .about-me {
         flex: 1 1 100%;
-        text-align: justify;
+        text-align: left;
         margin-top: 10px; /* Adjusted to give some space on smaller screens */
         margin-right: 20px;
     }
@@ -331,6 +332,6 @@ footer {
 
     .experience-item, .project-item {
         margin-bottom: 10px;
-        text-align: justify;
+        text-align: left;
     }
 }
