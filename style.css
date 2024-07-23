@@ -234,12 +234,12 @@ footer {
 @media (max-width: 768px) {
     .header-container {
         flex-direction: column;
-        text-align: center;
+        text-align: justify;
     }
 
     .header-container .profile {
         flex: 1 1 100%;
-        text-align: center;
+        text-align: justify;
     }
     .header-container .about-me {
         flex: 1 1 100%;
