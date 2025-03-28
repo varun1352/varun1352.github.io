@@ -3,122 +3,230 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Varun Deliwala's Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Cascadia+Code:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <title>Varun Deliwala | Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="container header-container">
-            <div class="profile">
-                <img src="profile.jpg" alt="Varun Deliwala">
-                <h1>Varun Deliwala</h1> 
-                <div class="social-links">
-                    <a href="mailto:vd2298@nyu.edu"><i class="fas fa-envelope"></i></a>
-                    <a href="https://github.com/varun1352"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/varun-deliwala-628771192"><i class="fab fa-linkedin"></i></a>
-                    <a href="VarunDeliwala.pdf" target="_blank"><i class="fas fa-file-pdf"></i></a>
+    <div class="theme-toggle">
+        <button id="themeToggle" aria-label="Toggle dark mode">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+        </button>
+    </div>
+
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">Deli</div>
+            <ul class="nav-links">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header id="about" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="profile-container">
+                    <div class="profile-image-container">
+                        <img src="profile.jpg" alt="Varun Deliwala" class="profile-image">
+                    </div>
+                    <div class="social-links">
+                        <a href="mailto:vd2298@nyu.edu" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="https://github.com/varun1352" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/varun-deliwala-628771192" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="VarunDeliwala.pdf" target="_blank" aria-label="Resume"><i class="fas fa-file-pdf"></i></a>
+                    </div>
                 </div>
-            </div>
-            <div class="about-me">
-                <h2>Hello there<a href="https://www.youtube.com/watch?v=rEq1Z0bjdwc">!</a></h2>
-                <p>I am currently a grad student at <a href="https://cims.nyu.edu/dynamic/">NYU Courant</a> in the second year of my Master's in Computer Science. I am currently working in the Artificial Intelligence lab of <a href="https://cs.nyu.edu/~fouhey/">Prof. David Fouhey</a> at NYU CDS. I am particularly interested in Object detection, tracking and forecasting in real-world dynamics. Before NYU, I did my undergrad at <a href="https://ahduni.edu.in/academics/schools-centres/school-of-engineering-and-applied-science/">Ahmedabad University</a> where I received a B.Tech Degree in CSE. While I wait for my model to converge, I also delve into anime, football (the European kind), and continue my search for the best coffee shop in NYC.</p>
-                <p>There is a short video explaining the project I am working on <a href="https://youtu.be/MtHV9CF0K54">here</a> :)</p>
+                <div class="hero-text">
+                    <h1 class="name">Varun Deliwala</h1>
+                    <div class="typewriter">
+                        <span id="typewriter-text"></span><span class="cursor">|</span>
+                    </div>
+                    <div class="about-text">
+                        <p>Hello there<a href="https://www.youtube.com/watch?v=rEq1Z0bjdwc" class="easter-egg">!</a> I am currently a grad student at <a href="https://cims.nyu.edu/dynamic/">NYU Courant</a> in the second year of my Master's in Computer Science. I am currently working in the Artificial Intelligence lab of <a href="https://cs.nyu.edu/~fouhey/">Prof. David Fouhey</a> at NYU CDS. I am particularly interested in Object detection, tracking and forecasting in real-world dynamics.</p>
+                        <p>Before NYU, I did my undergrad at <a href="https://ahduni.edu.in/academics/schools-centres/school-of-engineering-and-applied-science/">Ahmedabad University</a> where I received a B.Tech Degree in CSE. While I wait for my model to converge, I also delve into anime, football (the European kind), and continue my search for the best coffee shop in NYC.</p>
+                        <p>There is a short video explaining the project I am working on <a href="https://youtu.be/MtHV9CF0K54">here</a> :)</p>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
-    <main>
-        <section id="projects">
-            <div class="container">
-                <h2>Projects</h2>
-                <!-- Existing Projects -->
-                <div class="project-item">
-                    <h3><a href="https://github.com/varun1352/AlwaysHere">AlwaysHere (In Progress)</a></h3>
-                    <p>AlwaysHere was my take on AI Therapy, where one could talk with their friends, partners, parents on a voice chat where they converse with you using voice notes and they respond to you in the way they speak and in their voice. I made this for a hackathon in December of 2024.</p>
-                </div>
-                <div class="project-item">
-                    <h3><a href="https://github.com/varun1352/FinTrack">FinTrack: Personal Expense Tracker</a></h3>
-                    <p>Developed a full-stack personal finance application to help users track expenses, categorize spending, and visualize trends with dynamic charts. Built with Django, React, and GCP, the application integrates Plaid API for real-time bank synchronization and uses JWT-based multi-factor authentication for security.</p>
-                </div>
-                <div class="project-item">
-                    <h3><a href="https://github.com/varun1352/QuickQuery">QuickQuery: SQL Query Builder</a></h3>
-                    <p>Designed an interactive web tool enabling non-technical users to construct SQL queries visually. Built with React, Redux, and Flask, it includes real-time error-checking, PostgreSQL integration, and Redis caching for optimized performance. Deployed on AWS EC2 with Docker for scalability.</p>
-                </div>
-                <div class="project-item">
-                    <h3><a href="https://github.com/varun1352/Re-CenterStage">Critic.ai</a></h3>
-                    <p>What if you could get your marketing campaign critiqued by the target audience you are aiming to woo? This project aimed at solving this problem using fast inference from Cerebras and using multi agent systems from CrewAI. This is also a project I made for a hackathon in November of 2024</p>
-                </div>
-                <div class="project-item">
-                    <h3><a href="https://github.com/varun1352/Criticai">Re-CenterStage</a></h3>
-                    <p>I was always intrigued by how the center stage feature worked in facetime on iPad and being decent at Computer Vision made me realise that the best way to learn it was by reimplementing it. Ofcourse beating apple aint that easy but I tried my best to make it as optimized as possible without losing any smoothness in transitions. </p>
-                </div>
-                <div class="project-item">
-                    <h3><a href="https://github.com/varun1352/Super-Image-Resolution-using-GANs">Super Image Resolution using GANs</a></h3>
-                    <p>Achieved high-resolution image estimates from low-resolution counterparts using SRGANs. This project demonstrates my ability to implement advanced neural networks to solve practical image processing problems.</p>
-                </div>
-                <div class="project-item">
-                    <h3><a href="https://github.com/varun1352/Robot-Motion-Planning">Robot Motion Planning using MDPs and Quadtree decomposition</a></h3>
-                    <p>Given a starting position, ending position, and number of obstacles, the program computes an optimal path using Markov Decision Processes.</p>
-                </div>
-                <div class="project-item">
-                    <h3>Audio Transcription and Flashcard Generation for Video Lectures using LLMs (Borderline Abandoned :/)</h3>
-                    <p>Developed a tool for converting video lectures and YouTube content to text, leveraging OpenAI's GPT and Google Cloud Speech-to-Text. This project aims to facilitate learning by transforming audio content into accessible text and flashcards.</p>
-                </div>
-                <div class="project-item">
-                    <h3>AI Rock Paper Scissors in Real Time (Borderline Abandoned :/)</h3>
-                    <p>Developing an AI-driven Rock Paper Scissors game that uses a camera to capture the player's hand gestures in real-time. The AI analyzes previous decisions to predict and counter moves, showcasing computer vision and real-time decision-making.</p>
-                </div>
-            </div>
-        </section>
 
-        <section id="experience">
-            <div class="container">
-                <h2>Experience</h2>
-                <div class="experience-item">
-                    <h3>Fouhey AI Lab at NYU</h3>
-                    <p><strong>Research Assistant</strong>, March 2024 - Current</p>
-                    <p>Enhanced the scalability and performance of spatio-temporal forecasting models by implementing efficient training and deployment techniques, enabling robust AI solutions for large-scale datasets. Designed and integrated modular forecasting pipelines with custom data preprocessing and validation layers, significantly improving inference accuracy and model observability. Collaborated with cross-functional teams to conduct comprehensive model evaluations, developing reusable validation frameworks and tools for real-time deployment and monitoring, ensuring seamless integration and reliable performance.</p>
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="section-divider"></div>
+            
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title"><a href="https://github.com/varun1352/AlwaysHere">AlwaysHere</a> <span class="project-status">In Progress</span></h3>
+                        <p class="project-description">AlwaysHere was my take on AI Therapy, where one could talk with their friends, partners, parents on a voice chat where they converse with you using voice notes and they respond to you in the way they speak and in their voice. I made this for a hackathon in December of 2024.</p>
+                    </div>
                 </div>
-                <div class="experience-item">
-                    <h3>Tusker AI</h3>
-                    <p><strong>Machine Learning Intern</strong>, December 2022 - May 2023</p>
-                    <p>During my internship at Tusker AI, I achieved a remarkable 98.4% accuracy for number plate detection using YOLOv8. I developed a real-time ANPR system for Ahmedabad International Airport and optimized an OCR system, attaining a 96.8% test accuracy using CRNNs. Additionally, I improved payload efficiency by 25% through effective pruning and quantization techniques.</p>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title"><a href="https://github.com/varun1352/Musafir">Musafir</a> <a href="https://www.youtube.com/watch?v=x-168mrlLSc" class="demo-link"><i class="fas fa-play-circle"></i> Demo</a></h3>
+                        <p class="project-description">Musafir is a travel assistant application designed to help you explore new destinations. It suggests travel spots, provides detailed itineraries, and offers location-based recommendations to enhance your travel experience.</p>
+                    </div>
                 </div>
-                <div class="experience-item">
-                    <h3>SilverTouch Technologies Ltd.</h3>
-                    <p><strong>Machine Learning Intern</strong>, May 2022 - July 2022</p>
-                    <p>At SilverTouch Technologies Ltd., I significantly improved time series model accuracy by 20% with a hybrid ARIMA model. My efforts in enhancing input data quality resulted in a 15% increase in predictive accuracy, and I successfully reduced forecast error by 25% through the application of rolling window statistics and Fourier transformation.</p>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title"><a href="https://github.com/varun1352/BattleShip">BattleShip</a> <a href="https://youtu.be/xaacLbtVSww" class="demo-link"><i class="fas fa-play-circle"></i> Demo</a></h3>
+                        <p class="project-description">BattleShip is a fun and competitive game where two players attempt to sink each other's ships. I developed this project to learn about game mechanics and building interactive user interfaces in Python.</p>
+                    </div>
                 </div>
-                <div class="experience-item">
-                    <h3>Royal Technosoft Pvt Ltd</h3>
-                    <p><strong>Software Developer</strong>, May 2021 - August 2021</p>
-                    <p>As a Software Developer at Royal Technosoft Pvt Ltd, I developed RESTful services using Spring Boot, which enhanced system responsiveness by 22%. I also integrated and managed SQL and NoSQL databases, maintaining 99.9% data integrity throughout my tenure.</p>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title"><a href="https://github.com/varun1352/token3d">Token3D</a> <a href="https://youtu.be/TFMg8HXG-68" class="demo-link"><i class="fas fa-play-circle"></i> Demo</a></h3>
+                        <p class="project-description">Token3D is a 3D modeling application for visualizing and creating virtual 3D objects. This project helped me dive deep into 3D rendering and object manipulation techniques using Python.</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title"><a href="https://github.com/varun1352/testVLMs">TestVLMs</a></h3>
+                        <p class="project-description">TestVLMs explores various vision-language models and assesses their performance across different tasks, such as image captioning, object recognition, and multimodal understanding.</p>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title"><a href="https://github.com/varun1352/FinTrack">FinTrack: Personal Expense Tracker</a></h3>
+                        <p class="project-description">Developed a full-stack personal finance application to help users track expenses, categorize spending, and visualize trends with dynamic charts. Built with Django, React, and GCP, the application integrates Plaid API for real-time bank synchronization and uses JWT-based multi-factor authentication for security.</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title"><a href="https://github.com/varun1352/QuickQuery">QuickQuery: SQL Query Builder</a></h3>
+                        <p class="project-description">Designed an interactive web tool enabling non-technical users to construct SQL queries visually. Built with React, Redux, and Flask, it includes real-time error-checking, PostgreSQL integration, and Redis caching for optimized performance. Deployed on AWS EC2 with Docker for scalability.</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title"><a href="https://github.com/varun1352/Re-CenterStage">Critic.ai</a></h3>
+                        <p class="project-description">What if you could get your marketing campaign critiqued by the target audience you are aiming to woo? This project aimed at solving this problem using fast inference from Cerebras and using multi agent systems from CrewAI. This is also a project I made for a hackathon in November of 2024</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title"><a href="https://github.com/varun1352/Criticai">Re-CenterStage</a></h3>
+                        <p class="project-description">I was always intrigued by how the center stage feature worked in facetime on iPad and being decent at Computer Vision made me realise that the best way to learn it was by reimplementing it. Ofcourse beating apple aint that easy but I tried my best to make it as optimized as possible without losing any smoothness in transitions.</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title"><a href="https://github.com/varun1352/Super-Image-Resolution-using-GANs">Super Image Resolution using GANs</a></h3>
+                        <p class="project-description">Achieved high-resolution image estimates from low-resolution counterparts using SRGANs. This project demonstrates my ability to implement advanced neural networks to solve practical image processing problems.</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title"><a href="https://github.com/varun1352/Robot-Motion-Planning">Robot Motion Planning using MDPs and Quadtree decomposition</a></h3>
+                        <p class="project-description">Given a starting position, ending position, and number of obstacles, the program computes an optimal path using Markov Decision Processes.</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">Audio Transcription and Flashcard Generation for Video Lectures using LLMs <span class="project-status">Borderline Abandoned :/</span></h3>
+                        <p class="project-description">Developed a tool for converting video lectures and YouTube content to text, leveraging OpenAI's GPT and Google Cloud Speech-to-Text. This project aims to facilitate learning by transforming audio content into accessible text and flashcards.</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">AI Rock Paper Scissors in Real Time <span class="project-status">Borderline Abandoned :/</span></h3>
+                        <p class="project-description">Developing an AI-driven Rock Paper Scissors game that uses a camera to capture the player's hand gestures in real-time. The AI analyzes previous decisions to predict and counter moves, showcasing computer vision and real-time decision-making.</p>
+                    </div>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
+
+    <section id="experience" class="experience-section">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="section-divider"></div>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 class="timeline-title">Fouhey AI Lab at NYU</h3>
+                            <span class="timeline-period">March 2024 - Current</span>
+                        </div>
+                        <div class="timeline-position">Research Assistant</div>
+                        <p class="timeline-description">Enhanced the scalability and performance of spatio-temporal forecasting models by implementing efficient training and deployment techniques, enabling robust AI solutions for large-scale datasets. Designed and integrated modular forecasting pipelines with custom data preprocessing and validation layers, significantly improving inference accuracy and model observability. Collaborated with cross-functional teams to conduct comprehensive model evaluations, developing reusable validation frameworks and tools for real-time deployment and monitoring, ensuring seamless integration and reliable performance.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 class="timeline-title">Tusker AI</h3>
+                            <span class="timeline-period">December 2022 - May 2023</span>
+                        </div>
+                        <div class="timeline-position">Machine Learning Intern</div>
+                        <p class="timeline-description">During my internship at Tusker AI, I achieved a remarkable 98.4% accuracy for number plate detection using YOLOv8. I developed a real-time ANPR system for Ahmedabad International Airport and optimized an OCR system, attaining a 96.8% test accuracy using CRNNs. Additionally, I improved payload efficiency by 25% through effective pruning and quantization techniques.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 class="timeline-title">SilverTouch Technologies Ltd.</h3>
+                            <span class="timeline-period">May 2022 - July 2022</span>
+                        </div>
+                        <div class="timeline-position">Machine Learning Intern</div>
+                        <p class="timeline-description">At SilverTouch Technologies Ltd., I significantly improved time series model accuracy by 20% with a hybrid ARIMA model. My efforts in enhancing input data quality resulted in a 15% increase in predictive accuracy, and I successfully reduced forecast error by 25% through the application of rolling window statistics and Fourier transformation.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 class="timeline-title">Royal Technosoft Pvt Ltd</h3>
+                            <span class="timeline-period">May 2021 - August 2021</span>
+                        </div>
+                        <div class="timeline-position">Software Developer</div>
+                        <p class="timeline-description">As a Software Developer at Royal Technosoft Pvt Ltd, I developed RESTful services using Spring Boot, which enhanced system responsiveness by 22%. I also integrated and managed SQL and NoSQL databases, maintaining 99.9% data integrity throughout my tenure.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 Varun Deliwala</p>
+            <div class="footer-content">
+                <p>&copy; 2024 Varun Deliwala</p>
+                <div class="footer-links">
+                    <a href="mailto:vd2298@nyu.edu"><i class="fas fa-envelope"></i></a>
+                    <a href="https://github.com/varun1352"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/varun-deliwala-628771192"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
         </div>
     </footer>
-    <div class="night-mode-toggle">
-        <button id="toggleNightMode">🌙 Night Mode</button>
-    </div>
-    <script>
-        const toggleButton = document.getElementById('toggleNightMode');
-        const body = document.body;
 
-        toggleButton.addEventListener('click', () => {
-            body.classList.toggle('night-mode');
-            if (body.classList.contains('night-mode')) {
-                toggleButton.textContent = '☀️ Light Mode';
-            } else {
-                toggleButton.textContent = '🌙 Night Mode';
-            }
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
+
