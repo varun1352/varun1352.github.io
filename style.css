@@ -585,15 +585,16 @@
     .section-title {
       font-size: 1.8rem;
     }
-  
+    .timeline-header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      
     .name {
       font-size: 2rem;
     }
   
-    .timeline-header {
-      flex-direction: column;
-      align-items: flex-start;
-    }
+    
   }
   
   
